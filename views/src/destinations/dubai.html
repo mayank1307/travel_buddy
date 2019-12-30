@@ -1,0 +1,221 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Destination</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="301289369297-nicj458vlm49vg9ooidjcjl2vo12og0f.apps.googleusercontent.com">
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet"> 
+
+    <!-- Boomerang CSS (including Bootstrap) -->
+    <link type="text/css" href="../../assets/css/theme.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/now-ui-kit.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-gradient-danger" style="margin-bottom: 0px;">
+        <div class="container">
+          <a class="navbar-brand" href="#">Travel</a>
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Inspirations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Beaches</a>
+                  <a class="dropdown-item" href="#">Mountains</a>
+                  <a class="dropdown-item" href="#">Heritage</a>
+                  <a class="dropdown-item" href="#">Weekend Guide</a>
+                  <a class="dropdown-item" href="#">Honeymoon Packages</a>
+                  <a class="dropdown-item" href="#">Wildlife Tourism</a>
+                  <a class="dropdown-item" href="#">Road Trips</a>
+                  <a class="dropdown-item" href="#">Gateway Guide</a>
+                  <a class="dropdown-item" href="#">Luxury Travel</a>
+                </div>
+              </li>
+            </ul>
+            <img class="card-img-top" id="pimg" src="https://img.pngio.com/user-icons-free-download-png-and-svg-user-png-200_200.png" alt="img" style="height:40px;width:40px;border-radius: 50%;">
+            <a class="nav-link g-signin2" data-onsuccess="onSignIn" id="loginName">sign in<span class="sr-only">(current)</span></a>
+          </div>
+          
+          <a class="nav-link" onclick="signout()" href="/" id="signoutbut"><span class="sr-only">(current)</span></a>
+        </div>
+      </nav>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <div class="page-header clear-filter ">
+          <div class="page-header-image" id="backimg" data-parallax="true" style="background-image:url('https://d12dkjq56sjcos.cloudfront.net/pub/media/wysiwyg/dubai/01-city-landing/Dubai-Skyline-Burj-Al-Arab-Big-Bus-Tours-01.17.jpg');bottom: 10%;">
+          </div>
+          <p class="h6" style="font-size:50px;text-align: center;padding-top: 180px;">DUBAI</p>
+          <p class="h1 text-white" style="font-size:50px;text-align: center;padding-top: 10px;"> luxury shopping and a lively nightlife scene</p>
+          <div class="row" style="padding: 0% 30%;">
+        <div class="container">
+          <button type="button" onclick="window.scrollBy(0, 1000);" class="btn bg-gradient-purple btn-animated btn-animated-x">
+                    <span class="btn-inner--visible">Get packages</span>
+                    <span class="btn-inner--hidden"><i class="fas fa-rupee-sign"></i></span>
+            </button>
+            <button type="button" onclick="window.open('https://www.tripoto.com/tourist-map-of/dubai')" class="btn bg-gradient-purple btn-animated btn-animated-x">
+                    <span class="btn-inner--visible">View on Map</span>
+                    <span class="btn-inner--hidden"><i class="fas fa-map-marker-alt"></i></span>
+            </button>
+        </div>
+        </div>
+          <!-- Button trigger modal -->
+        <div style="margin: 5% 10%;">
+            <button type="button" class="btn btn-primary bg-gradient-danger" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-info"></i>
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DUBAI</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        Often christened as the Pearl of the Gulf, Dubai concocts adventures for every kind of tourist. This is the city where glossy locales peppered with dazzling malls meets the the Bedouin life across the magnificent desert dunes. To make the most of your holiday in Dubai, start with understanding the emirate’s history at the Dubai Museum in the historic Al Fahidi Fort. Hop onto an abra (boat) and visit the Deira side of the Dubai creek for its bustling bazaars. Dubai’s tourism can be credited to the city’s Spice Souk, that is brimming with an assortment of spices, teas, dry fruits and flowers. If you are in the lookout for a local breakfast (especially, the falafels) by the beach, the sandy Jumeirah Beach is your best bet. Visit the Burj Khalifa to witness the magnificent view of the city, particularly after sundown. For that mandatory shopping spree, the glitzy Dubai Mall in the downtown section of the city should be the next stop in your Dubai tour. You can get all your Arab souvenirs from here. Downtown Dubai is also one of the most popular places to visit in the city primarily because of the al fresco dining scene, that boasts of some of the best baba ganoush and flatbread you have ever tasted. And as no Dubai trip is complete without a Desert Safari, book yourself a package that has it all - dune bashing, camel-riding, belly dancing, and a flavoursome dinner of kebabs.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- things to do -->
+    <div class="card card-nav-tabs card-plain px-3">
+            <div class="card-header">
+                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs" data-tabs="tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#manali1" data-toggle="tab">BURJ KHALIFA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana2" href="#manali2" data-toggle="tab">DUBAI CREEK</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana3" href="#manali3" data-toggle="tab">BASTAKIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana4" href="#manali4" data-toggle="tab">GLOBAL VILLAGE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana5" href="#manali5" data-toggle="tab">MIRACLE GARDEN</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="card-body ">
+                <div class="tab-content text-center">
+                    <div class="tab-pane active" id="manali1">
+                        <p>Dubai’s glittering skyline is its most charming highlight and among its skyscrapers, Burj Khalifa stands out as one of the best places to visit in Dubai. A 160 storey structure, Burj Khalifa is considered to be the world’s tallest structure and is a symbol for the fascinating city. 
+
+                            A trip to Dubai is incomplete without a visit here and we recommend that this should be the first few places you visit. There are several attractions which will keep you busy here but we do suggest heading up to the 124th floor for breathtaking views of the city. Considered to be the second-highest observation deck in the world, it offers travellers an unforgettable experience. It’s best to book your tickets well in advance since almost everyone who visits wants to catch a glimpse of these stunning views. </p>
+                    </div>
+                    <div class="tab-pane" id="manali2">
+                        <p>Dubai Creek is considered to be one of the best places to visit in Dubai owing to its historical relevance. The creek separates the city into two towns, Deira and Bur Dubai. A major port, Dubai Creek has played a vital role in the evolution of Dubai as a world-class city. Surrounded by skyscrapers, one must include this in their list of places to visit in Dubai to simply admire the skyline and the architectural brilliance of its many structures. 
+
+                            Counted among the most attractive Dubai tourist places, it is a must visit if you are a photographer and want to capture the fascinating views. We recommend heading here in the evening just as the sun is setting and the city is coming to life and preparing for the night. </p>
+                    </div>
+                    <div class="tab-pane" id="manali3">
+                        <p>If history, art and architecture is what you seek during a vacation, we recommend including the old city in your list of places to visit in Dubai. Taking you back in time with old buildings, vintage cafes and decade-old shops is the Bastakia Quarter which is counted among the most attractive places to see in Dubai. Also known as Al-Fahidi neighbourhood, Bastakia dates back to the 19th century and is said to have been the erstwhile colony of wealthy Persian merchants. 
+
+                            A world within a city, one of the most beautiful Dubai tourist places, Bastakia is situated in the eastern part of Dubai’s old district Bur Dubai. One of the most enthralling places to visit in Dubai, the best way to learn more about the area is by enrolling in insightful walking tours. </p>
+                    </div>
+                    <div class="tab-pane" id="manali4">
+                        <p>Global Village is one of the best places to visit in Dubai, especially if you are travelling with family. A complete tourist destination, it offers travellers everything from shopping, entertainment, food to leisure and cultural programs. 
+
+                            Considered to be the region’s first tourist destination of this nature, Global Village is a great way to spend time in Dubai. Since the village witnesses hundreds of tourists everyday, we recommend heading here a little before ticket counters open so you don’t miss out on some of its best attractions. 
+                            
+                            There are more than 30 stalls representing a different country and each stall is a great way to learn more about other cultures. Global Village is also a preferred option for those who have been waiting to complete their shopping owing to the huge variety of things available. </p>
+                    </div>
+                    <div class="tab-pane" id="manali5">
+                        <p>A great way to spend time in the city is by visiting one of the biggest natural gardens in the world. Aptly known as Miracle Garden, it is one of the best places to visit in Dubai especially if you are a nature lover. Launched in 2013, the vast flower garden is one of its kind and is home to over 45 million flowers. The garden is definitely recommended as one of the top places to visit in Dubai if you are travelling with the family since there are tons of things to keep little ones busy. 
+
+                            What makes the flower garden one of the most delightful places to visit in Dubai is the innovative use of flowers. From human figures, animals, faces, architectural marvels to houses, pathways, lights poles – everything is covered in different varieties of flowers. </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- checkout -->
+          <div class="container py-5">
+            <div class="row">
+          <button type="button" id="checkout" onclick="window.location.href='../choice/choose.html'" class="btn btn-success btn-animated btn-animated-x" style="left: 55%;">
+                  <span class="btn-inner--visible">Get packages</span>
+                  <span class="btn-inner--hidden"><i class="fas fa-rupee-sign"></i></span>
+          </button>
+          <button type="button" onclick="window.location.href='/'" class="btn btn-danger btn-animated btn-animated-x" style="left: 25%;">
+              <span class="btn-inner--visible">Back to Home</span>
+              <span class="btn-inner--hidden"><i class="fas fa-arrow-left"></i></span>
+          </button>
+          </div>
+          <div class="modal fade" id="modalerr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">MESSAGE</h5>
+                      </div>
+                      <div class="modal-body text-dark" id="dataerr">
+                          Error
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+        <!--   Core JS Files   -->
+        <script src="destination.js" type="text/javascript"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!--   Core JS Files   -->
+        <script src="../../app.js" type="text/javascript"></script>
+        <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+
+        <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+        <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
+
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+
+        <!-- Boomerang JS -->
+        <script src="../../assets/js/theme.js"></script>
+        <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+        <script src="../../assets/js/now-ui-kit.js" type="text/javascript"></script>
+</body>
+</html>

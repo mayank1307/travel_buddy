@@ -1,0 +1,209 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Destination</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="301289369297-nicj458vlm49vg9ooidjcjl2vo12og0f.apps.googleusercontent.com">
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet"> 
+
+    <!-- Boomerang CSS (including Bootstrap) -->
+    <link type="text/css" href="../../assets/css/theme.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/now-ui-kit.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-gradient-danger" style="margin-bottom: 0px;">
+        <div class="container">
+          <a class="navbar-brand" href="#">Travel</a>
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Inspirations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Beaches</a>
+                  <a class="dropdown-item" href="#">Mountains</a>
+                  <a class="dropdown-item" href="#">Heritage</a>
+                  <a class="dropdown-item" href="#">Weekend Guide</a>
+                  <a class="dropdown-item" href="#">Honeymoon Packages</a>
+                  <a class="dropdown-item" href="#">Wildlife Tourism</a>
+                  <a class="dropdown-item" href="#">Road Trips</a>
+                  <a class="dropdown-item" href="#">Gateway Guide</a>
+                  <a class="dropdown-item" href="#">Luxury Travel</a>
+                </div>
+              </li>
+            </ul>
+            <img class="card-img-top" id="pimg" src="https://img.pngio.com/user-icons-free-download-png-and-svg-user-png-200_200.png" alt="img" style="height:40px;width:40px;border-radius: 50%;">
+            <a class="nav-link g-signin2" data-onsuccess="onSignIn" id="loginName">sign in<span class="sr-only">(current)</span></a>
+          </div>
+          
+          <a class="nav-link" onclick="signout()" href="/" id="signoutbut"><span class="sr-only">(current)</span></a>
+        </div>
+      </nav>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <div class="page-header clear-filter ">
+          <div class="page-header-image" id="backimg" data-parallax="true" style="background-image:url('http://cdn.cnn.com/cnnnext/dam/assets/180706100551-04-great-rann-of-kutch.jpg');bottom: 10%;">
+          </div>
+          <p class="h6" style="font-size:50px;text-align: center;padding-top: 180px;">KUTCH</p>
+          <p class="h1 text-white" style="font-size:50px;text-align: center;padding-top: 10px;">Island that resembles the shape of a tortoise</p>
+          <div class="row" style="padding: 0% 30%;">
+        <div class="container">
+          <button type="button" onclick="window.scrollBy(0, 1000);" class="btn bg-gradient-purple btn-animated btn-animated-x">
+                    <span class="btn-inner--visible">Get packages</span>
+                    <span class="btn-inner--hidden"><i class="fas fa-rupee-sign"></i></span>
+            </button>
+            <button type="button" onclick="window.open('https://www.tripoto.com/tourist-map-of/kutch')" class="btn bg-gradient-purple btn-animated btn-animated-x">
+                    <span class="btn-inner--visible">View on Map</span>
+                    <span class="btn-inner--hidden"><i class="fas fa-map-marker-alt"></i></span>
+            </button>
+        </div>
+        </div>
+          <!-- Button trigger modal -->
+        <div style="margin: 5% 10%;">
+            <button type="button" class="btn btn-primary bg-gradient-danger" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-info"></i>
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">KUTCH</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body text-dark">
+                            One of Gujarat's most beautiful places, Kutch is nature's masterpiece. The vast barren land with spurts of colour is an enchanting sight and the White Desert, as it's fondly called, is what travellers' dreams are made of. The Rann of Kutch is filled with sea water during monsoons and with salt water, immediately after. Only on a few islands will you find signs of vegetation enough to sustain the life here. The Rann is made of almost 16 tribes and most tribes have distinct cultures, different languages and a way of life that is drastically different. During your trip here, do make sure to spend time with the tribes here. Not only will you learn a little more about the locals here but the experience tends to become quite memorable. Do visit Aina Mahal, Bhuj Museum, Prag Mahal and Mandvi beach. For adventure enthusiasts, do try the camel safari, stay at the camps under the stars and experience everything one usually doesn't. Of course, a visit here during Rann Utsav is unmatched. For shopaholics, there is a plethora of goodies to take back home, including silver jewellery, handicrafts, bandhani and applique work. Do choose your stay option carefully since that will add to your experience here in Kutch. Numerous options have been added to this town's growing list of hotels and you can easily choose the kind of holiday you want.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- things to do -->
+    <div class="card card-nav-tabs card-plain px-3">
+            <div class="card-header">
+                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs" data-tabs="tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#manali1" data-toggle="tab">RANN OF KUTCH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana2" href="#manali2" data-toggle="tab">MANDVI BEACH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana3" href="#manali3" data-toggle="tab">PRAG MAHAL PALACE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana4" href="#manali4" data-toggle="tab">KALOM DUNGAR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mana5" href="#manali5" data-toggle="tab">RANN UTSAV</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="card-body ">
+                <div class="tab-content text-center">
+                    <div class="tab-pane active" id="manali1">
+                        <p>The Great Rann of Kutch is a salt marsh in the Thar Desert in the Kutch District of Gujarat, India. It is about 7500 km² in area and is reputed to be one of the largest salt deserts in the world. This area has been inhabited by the Kutchi people.</p>
+                    </div>
+                    <div class="tab-pane" id="manali2">
+                        <p>Mandvi is a town with municipality in the Kutch district in the Indian state of Gujarat. It was once a major port of the region and summer retreat for Maharao of the Cutch State. The old city was enclosed in the fort wall and remains of the fort wall can still be seen.</p>
+                    </div>
+                    <div class="tab-pane" id="manali3">
+                        <p>Next door to the Aina Mahal, in the same walled compound, is the giant Prag Mahal, which may at first seem slightly out of place at the far western edge of India, looking more appropriate in France. But then again, globalization is not a new phenomenon. This is a palace commissioned by King Pragmalji in the 1860s, designed by Colonel Henry Saint Wilkins in the Italian Gothic style and built in the middle of Bhuj next to the Aina Mahal.</p>
+                    </div>
+                    <div class="tab-pane" id="manali4">
+                        <p>Kalo Dungar or Black Hill is the highest point in Kutch, Gujarat, India, at 462 m. It is located 97 km from District headquarters of Bhuj and 25 km from nearest town Khavda. This is probably the only place in Kachchh from where a panoramic view of the Great Rann of Kutch is possible.</p>
+                    </div>
+                    <div class="tab-pane" id="manali5">
+                        <p>'Rann Utsav is an awesome festival of Kutch, Gujarat, India. It is a Carnival of Music, Dance, nature beauty of White Rann and much more then that when visit under the full Moon. Kutch Rann Utsav 2018 - 2019 is the shimmering landscape that gives the enchanting moments of this Fest, which feels like as Heaven On Earth during Festival Time. In fact, it’s a Family holiday destination to explore fun moments and store in cameras for life time.  </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- checkout -->
+          <div class="container py-5">
+            <div class="row">
+          <button type="button" id="checkout" onclick="window.location.href='../choice/choose.html'" class="btn btn-success btn-animated btn-animated-x" style="left: 55%;">
+                  <span class="btn-inner--visible">Get packages</span>
+                  <span class="btn-inner--hidden"><i class="fas fa-rupee-sign"></i></span>
+          </button>
+          <button type="button" onclick="window.location.href='/'" class="btn btn-danger btn-animated btn-animated-x" style="left: 25%;">
+              <span class="btn-inner--visible">Back to Home</span>
+              <span class="btn-inner--hidden"><i class="fas fa-arrow-left"></i></span>
+          </button>
+          </div>
+          <div class="modal fade" id="modalerr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">MESSAGE</h5>
+                      </div>
+                      <div class="modal-body text-dark" id="dataerr">
+                          Error
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+        <!--   Core JS Files   -->
+        <script src="destination.js" type="text/javascript"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!--   Core JS Files   -->
+        <script src="../../app.js" type="text/javascript"></script>
+        <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+
+        <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+        <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
+
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+
+        <!-- Boomerang JS -->
+        <script src="../../assets/js/theme.js"></script>
+        <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+        <script src="../../assets/js/now-ui-kit.js" type="text/javascript"></script>
+</body>
+</html>
