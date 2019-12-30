@@ -187,7 +187,7 @@ app.get("/group",(req,res)=>{
 app.get("/friends",(req,res)=>{
     res.render("src/choice/friends.html");
 });
-var PORT=process.env.PORT || 5050;
+var PORT=process.env.PORT;
 app.listen(PORT,()=>{
     console.log("server started on port "+PORT);
 });
